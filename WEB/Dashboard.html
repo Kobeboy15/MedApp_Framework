@@ -7,16 +7,13 @@
 				margin:0;
 				font-family: Helvetica;
 			}
-			input[type=submit] {
-				background-color: #114B5F;
-			    border: none;
-			    border-radius: 5px;
-			    color: white;
-			    padding: 10px;
-			    text-decoration: none;
-			    margin: 4px 2px;
-			    cursor: pointer;
+			
+			#wrapper{
+				width:100%;
+				height:100%;
+				overflow-y: hidden;
 			}
+
 			#header{
 				background-color:#2CC14A;
 				padding:4px;
@@ -24,42 +21,30 @@
 				color:#0C1821;
 			}
 			#main{
-				border: 1px solid red;
 				background-color: #2CC14A;
 				color:#0C1821;
 				font-weight: bold;
 				font-size: 20px;
 				padding:25px;
-				width:200px;
-				height:100px;
-			}
-			#infoBox{
-				margin: auto;
-				display:grid;
-				grid-template-columns: auto auto;
-			}
-
-			#submitBox{
-				margin: auto;
-				margin-top: 20px;
+				width:15%;
+				min-height:100%;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="header">
-			<h2 style="margin-left:30px;">Medical Records</h2>
-		</div>
-		<div id="main">
-			<form>
-				<div id="infoBox">
-					<i class="material-icons" style="vertical-align: middle;">lock</i>
-					<!-- <label>Password</label> -->
-					<input type="password" style="border:none; vertical-align: middle;" />
-				</div>
-				<div id="submitBox">
-					<input type="submit" value="Log In" style="width:100%;"/>
-				</div>
-			</form>
+		<div id="wrapper">
+			<div id="header">
+				<h2 style="margin-left:30px;">Medical Records</h2>
+			</div>
+			<div id="main">
+				<ul>
+					<li>Home</li>
+					<li>Doctors</li>
+					<li>Medicine</li>
+					<li>Records</li>
+					<li>Log Off</li>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
