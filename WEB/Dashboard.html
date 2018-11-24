@@ -3,12 +3,29 @@
 		<title>ROCOCO Med Records - Login</title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 		<style>
 			body{
 				margin:0;
 				font-family: Helvetica;
 			}
 			
+			button {
+				font-family: 'Fira Sans', sans-serif;
+				font-size:0.8em;
+				background-color: #186828;
+			    border: none;
+			    color: white;
+			    padding: 10px;
+			    text-decoration: none;
+			    cursor: pointer;
+			    width:100%;
+			}
+
+			button:hover{
+				background-color: #2CC14A;
+			}
+
 			#wrapper{
 				width:100%;
 				height:100%;
@@ -26,9 +43,12 @@
 				color:#0C1821;
 				font-weight: bold;
 				font-size: 20px;
-				padding:25px;
 				width:15%;
 				min-height:100%;
+			}
+
+			#menuButton{
+				width:100%;
 			}
 		</style>
 	</head>
@@ -38,13 +58,14 @@
 				<h2 style="margin-left:25%;">Tenshi Records</h2>
 			</div>
 			<div id="main">
-				<ul>
-					<li>Home</li>
-					<li>Doctors</li>
-					<li>Medicine</li>
-					<li>Records</li>
-					<li>Log Off</li>
-				</ul>
+				<div id="menuButton">
+					<button>Medical Record</button>
+					<button>Patient</button>
+					<button>Doctors</button>
+					<button>Medicine</button>
+					<button>Disease</button>
+					<button>Log Off</button>
+				</div>
 			</div>
 		</div>
 	</body>

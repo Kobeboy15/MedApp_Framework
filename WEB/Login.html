@@ -3,12 +3,14 @@
 		<title>ROCOCO Med Records - Login</title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">		
 		<style>
 			body{
 				margin:0;
 				font-family: Helvetica;
 			}
-			button {
+			button{
+				font-family: 'Fira Sans', sans-serif;
 				background-color: #114B5F;
 			    border: none;
 			    border-radius: 5px;
@@ -17,6 +19,7 @@
 			    text-decoration: none;
 			    margin: 4px 2px;
 			    cursor: pointer;
+			    width:100%;
 			}
 			#header{
 				background-color:#2CC14A;
@@ -60,11 +63,12 @@
 			<form>
 				<div id="infoBox">
 					<i class="material-icons" style="vertical-align: middle;">lock</i>
-					<!-- <label>Password</label> -->
 					<input type="password" style="border:none; vertical-align: middle;" />
 				</div>
 				<div id="submitBox">
-					<button style="width:100%">Log In</button>
+					<form>
+						<button formaction="Dashboard.html">Log In</button>
+					</form>
 				</div>
 			</form>
 		</div>
