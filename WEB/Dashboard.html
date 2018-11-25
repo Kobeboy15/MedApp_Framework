@@ -4,25 +4,33 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		
 		<style>
 			body{
 				margin:0;
 				font-family: Helvetica;
 			}
 			
-			#menuButton button {
+			.material-icons {
+				font-size: 5em;
+			}
+
+			#menuButton a {
 				font-family: 'Fira Sans', sans-serif;
 				font-size:1em;
+				text-align: center;
 				background-color: #186828;
 			    border: none;
 			    color: white;
 			    padding: 10px;
 			    text-decoration: none;
 			    cursor: pointer;
-			    width:100%;
+			    display:grid;
+				grid-template-columns: auto;
 			}
 
-			#menuButton button:hover{
+			#menuButton a:hover{
 				background-color: #0e3e18;
 			}
 
@@ -49,20 +57,19 @@
 			}
 
 			#mainContent{
-				border:1px solid red;
 				padding: 20px;
 				float:left;
 				display:grid;
 				grid-template-columns: auto auto;
 				grid-gap: 10%;
-				
+				border:1px solid red;
 			}
 
 			#mainContent button{
 				border:none;
-				padding:20px;
-				font-size: 40px
-			
+				font-size: 24px;
+				padding: 24px;
+				cursor: pointer;
 			}
 
 			#menuButton{
@@ -77,19 +84,44 @@
 			</div>
 			<div id="mainNav">
 				<div id="menuButton">
-					<button>Medical Record</button>
-					<button>Patient</button>
-					<button>Doctors</button>
-					<button>Medicine</button>
-					<button>Disease</button>
-					<button>Log Off</button>
+					<a href="#">Medical Record</a>
+					<a href="#">Patient</a>
+					<a href="#">Doctors</a>
+					<a href="#">Medicine</a>
+					<a href="#">Disease</a>
+					<a href="Login.html">Log Off</a>
 				</div>
 			</div>
 			<div id="mainContent">
-				<button>Create Record</button>
-				<button>Edit Record</button>
-				<button>View Record</button>
-				<button>Delete Record</button>
+				<a class="btn btn-New" href="#open-modal">
+					<div style="width:10em; height:10em;">
+						<i class="material-icons">note_add</i>
+					</div>
+				</a>
+				<a class="btn btn-Edit" href="#open-modal">
+					<div style="width:10em; height:10em;">
+						<i class="material-icons">create</i>
+					</div>
+				</a>
+				<a class="btn btn-View" href="#open-modal">
+					<div style="width:10em; height:10em;">
+						<i class="material-icons">visibility</i>
+					</div>
+				</a>
+				<a class="btn btn-Delete" href="#open-modal">
+					<div style="width:10em; height:10em;">
+						<i class="material-icons">delete</i>
+					</div>
+				</a>
+
+				<div id="open-modal" class="modal-window">
+					<div>
+						<a href="#" title="Close" class="modal-close">Close</a>
+						<div id="contentGoesHere">
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</body>
