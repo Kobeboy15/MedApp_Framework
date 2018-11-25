@@ -13,7 +13,22 @@
 			}
 			
 			.material-icons {
-				font-size: 5em;
+				font-size: 2em;
+				vertical-align: middle;
+			}
+
+			.functionButtons{
+				padding:2em;
+				float:left;
+			}
+
+			.functionText{
+				float:left;
+				display:flex;
+			}
+
+			.functionText p{
+				font-size: 2em;
 			}
 
 			#menuButton a {
@@ -57,12 +72,12 @@
 			}
 
 			#mainContent{
-				padding: 20px;
+				padding: 5px;
 				float:left;
 				display:grid;
-				grid-template-columns: auto auto;
-				grid-gap: 10%;
-				border:1px solid red;
+				grid-template-columns: auto;
+				/*grid-gap: 3%;*/
+				min-width: 80%
 			}
 
 			#mainContent button{
@@ -70,6 +85,7 @@
 				font-size: 24px;
 				padding: 24px;
 				cursor: pointer;
+				float:left;
 			}
 
 			#menuButton{
@@ -94,23 +110,35 @@
 			</div>
 			<div id="mainContent">
 				<a class="btn btn-New" href="#open-modal">
-					<div style="width:10em; height:10em;">
+					<div class="functionButtons">
 						<i class="material-icons">note_add</i>
+					</div>
+					<div class="functionText">
+						<p>Create a New Record</p>
 					</div>
 				</a>
 				<a class="btn btn-Edit" href="#open-modal">
-					<div style="width:10em; height:10em;">
+					<div class="functionButtons">
 						<i class="material-icons">create</i>
+					</div>
+					<div class="functionText">
+						<p>Edit an existing Record</p>
 					</div>
 				</a>
 				<a class="btn btn-View" href="#open-modal">
-					<div style="width:10em; height:10em;">
+					<div class="functionButtons">
 						<i class="material-icons">visibility</i>
+					</div>
+					<div class="functionText">
+						<p>View Records</p>
 					</div>
 				</a>
 				<a class="btn btn-Delete" href="#open-modal">
-					<div style="width:10em; height:10em;">
+					<div class="functionButtons">
 						<i class="material-icons">delete</i>
+					</div>
+					<div class="functionText">
+						<p>Delete Records</p>
 					</div>
 				</a>
 
@@ -118,6 +146,7 @@
 					<div>
 						<a href="#" title="Close" class="modal-close">Close</a>
 						<div id="contentGoesHere">
+							<h1>This is where you place your tables or forms</h1>
 						</div>
 					</div>
 				</div>
